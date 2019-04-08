@@ -35,7 +35,7 @@
                 context: this.getContext().getDataContext(),
                 autoLoad: true,
                 model: Ext.identityFn('UserStory'),
-                fetch: ['FormattedID', 'Name', 'Owner', 'Description', 'PlanEstimate'],
+                fetch: ['FormattedID', 'Name', 'Owner', 'Description', 'PlanEstimate','PortfolioItem'],
                 limit: (scope.getRecord()) ? 200 : 50,
                 listeners: {
                     load: this._onStoriesLoaded,
